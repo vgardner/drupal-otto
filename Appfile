@@ -1,0 +1,18 @@
+application {
+    name = "Drupal"
+    type = "php"
+}
+
+customization "php" {
+  php_version = "5.5.9"
+}
+
+project {
+    name = "drupal"
+    infrastructure = "aws"
+}
+
+infrastructure "production" {
+    type = "aws"
+    flavor = "vpc-public-private"
+}
